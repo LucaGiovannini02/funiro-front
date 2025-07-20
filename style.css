@@ -3,10 +3,12 @@ html, body {
     margin: 0px;
     width: 100%;
     height: 100%;
+    overflow-x: hidden;
 }
 
 :root {
     --lateral-border: 330px;
+    --gray: #F4F4F4;
 }
 
 .navbar {
@@ -103,7 +105,7 @@ html, body {
 }
 
 .dots > * {
-    margin: 0px 3px;
+    margin: 30px 3px;
 }
 
 .dot {
@@ -175,3 +177,132 @@ html, body {
     font-weight: bold;
     font-size: 20px;
 }
+
+/* -------------------------- */
+
+.section-2 {
+    padding: 0px var(--lateral-border);
+    margin-top: 50px;
+    position: relative;
+}
+
+.section-2 .description {
+    opacity: 70%;
+}
+
+.section-2 .title {
+    font-weight: 500;
+}
+
+.section-2 > .infos > div > div > * {
+    margin: 10px 0px;
+}
+
+.section-2 > .infos > div > svg {
+    margin-right: 20px;
+}
+
+.section-2 > .infos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-2 > .infos > div {
+    display: flex;
+    align-items: center;
+}
+
+.section-2 > .infos > div {
+    display: flex;
+    align-items: center;
+}
+
+.section-2 > .our-products {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-2 > .our-products > .title {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.section-2 > .our-products > .products {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.section-2 > .our-products > .products > .product > .img-with-banner > img {
+    width: 280px;
+}
+
+.section-2 > .our-products > .products > .product > .info {
+    padding: 0px 20px;
+    background-color: var(--gray);
+    padding: 20px;
+}
+
+.section-2 > .our-products > .products > .product > .info > * {
+    margin-bottom: 10px;
+}
+
+.section-2 > .our-products > .products > .product > .info > *:last-child {
+    margin-bottom: 0px;
+}
+
+.section-2 > .our-products > .products > .product > .info > .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.section-2 > .our-products > .products > .product > .info > .price {
+    display: flex;
+    align-items: center;
+}
+
+.section-2 > .our-products > .products > .product > .info > .price > div {
+    margin-right: 15px;
+}
+
+.section-2 > .our-products > .products > .product > .info > .price > .confirmed {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-2 > .our-products > .products > .product > .info > .price > .del {
+    opacity: 70%;
+}
+
+.section-2 .img-with-banner {
+    position: relative;
+    height: 295px;
+}
+
+.section-2 .banner {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(233, 113, 114);
+    color: white;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .new {
+    background-color: rgb(46, 194, 172)
+}
+
+.section-2 .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
