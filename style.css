@@ -509,6 +509,7 @@ html, body {
 
     .main {
         font-size: 25px;
+        margin-bottom: 10px;
     }
 
     .button-left,  .button-right{
