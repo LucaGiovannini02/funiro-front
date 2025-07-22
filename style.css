@@ -9,6 +9,7 @@ html, body {
 :root {
     --lateral-border: 290px;
     --gray: #F4F4F4;
+    --gray2: #F2F1F0;
 }
 
 .navbar {
@@ -390,4 +391,61 @@ html, body {
     background-color: black;
     border-radius: 100%;
     padding: 8px;
+}
+
+.section-3 .detail {
+    position: absolute;
+    left: 30px;
+    bottom: 20px;
+    z-index: 100;
+    width: 210px;
+    height: 114px;
+    background-color: var(--gray2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.section-3 .line {
+    width: 30px;
+    height: 1px;
+    background-color: black;
+}
+
+.section-3 .minor-info {
+    display: flex;
+    align-items: center;
+    opacity: 70%;
+}
+
+.section-3 .minor-info > * {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.section-3 .major-info {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+
+.section-3 .arrow {
+    background-color: black;
+    z-index: 100;
+    position: absolute;
+    left: calc(30px + 210px + 50px);
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px;
+}
+
+.section-3 .dots {
+    display: flex;
+    z-index: 100;
+    position: absolute;
+    bottom: 0px;
+    left: calc(372px + 24px);
 }
